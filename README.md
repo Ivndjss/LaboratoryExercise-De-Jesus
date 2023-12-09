@@ -116,7 +116,7 @@ method to serve as **interface**: follow the program structure set below
 **4) Display the count of a specific word from myString.**
 
 
-### myString.py
+#### myString.py
      from collections import Counter
      
      myString = "To understand the need for creating a class let us consider an example: Let us say that you wanted to track the number of dogs which may have different attributes like breed, and age. If a list is used, the first element could be the dog’s breed while the second element could represent its age. Let's suppose there are 100 different dogs, then how would you know which element is supposed to be which? What if you wanted to add other properties to these dogs? This lacks organization and it’s the exact need for classes."
@@ -124,14 +124,23 @@ method to serve as **interface**: follow the program structure set below
      words = myString.split()
      word_counts = Counter(words)
 
-### Display the number of the word occurrences and the first 5 most common words mentioned in myString.
+#### Display the number of the word occurrences and the first 5 most common words mentioned in myString.
      print(word_counts.most_common(5))
 
-### Display the total number of words in myString
+#### Display the total number of words in myString
      print(len(words))
 
-### Display all the items sets (keywords and values) of all words in myString
+#### Display all the items sets (keywords and values) of all words in myString
      print(word_counts.items())
 
-### Display the count of a specific word from myString
+#### Display the count of a specific word from myString
      print(word_counts['word'])
+
+#### The Result
+    myString.py
+     [('the', 6), ('to', 4), ('you', 3), ('element', 3), ('need', 2)]
+     95
+     dict_items([('To', 1), ('understand', 1), ('the', 6), ('need', 2), ('for', 2), ('creating', 1), ('a', 2), ('class', 1), ('let', 1), ('us', 2), ('consider', 1), ('an', 1), ('example:', 1), ('Let', 1), ('say', 1), ('that', 1), ('you', 3), ('wanted', 2), ('to', 4), ('track', 1), ('number', 1), ('of', 1), ('dogs', 1), ('which', 2), ('may', 1), ('have', 1), ('different', 2), ('attributes', 1), ('like', 1), ('breed,', 1), ('and', 2), ('age.', 2), 
+     ('If', 1), ('list', 1), ('is', 2), ('used,', 1), ('first', 1), ('element', 3), ('could', 
+     2), ('be', 2), ('dog’s', 1), ('breed', 1), ('while', 1), ('second', 1), ('represent', 1), ('its', 1), ("Let's", 1), ('suppose', 1), ('there', 1), ('are', 1), ('100', 1), ('dogs,', 1), ('then', 1), ('how', 1), ('would', 1), ('know', 1), ('supposed', 1), ('which?', 1), ('What', 1), ('if', 1), ('add', 1), ('other', 1), ('properties', 1), ('these', 1), ('dogs?', 1), ('This', 1), ('lacks', 1), ('organization', 1), ('it’s', 1), ('exact', 1), ('classes.', 1)])
+     0
