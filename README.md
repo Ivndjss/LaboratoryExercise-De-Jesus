@@ -107,5 +107,5 @@ method to serve as **interface**: follow the program structure set below
 
 # Documentation for the Laboratory Exercise
 
-## 1) Display the number of the word occurrences and the first 5 tapmost common words mentioned in myString.
+### 1) Display the number of the word occurrences and the first 5 tapmost common words mentioned in myString.
 
