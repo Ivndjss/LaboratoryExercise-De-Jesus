@@ -2,7 +2,7 @@
 Application Development Laboratory Exercise
 
 
-##Laboratory Exercise
+## Laboratory Exercise
 Using the string below:
 
 myString =""To understand the need for creating a class let us consider an example: Let us
@@ -98,7 +98,7 @@ method to serve as **interface**: follow the program structure set below
 
 
 
-#Documentation for the Laboratory Exercise
+# Documentation for the Laboratory Exercise
 
 
 
