@@ -2,7 +2,7 @@
 Application Development Laboratory Exercise
 
 
-#Laboratory Exercise
+Laboratory Exercise
 Using the string below:
 
 myString =""To understand the need for creating a class let us consider an example: Let us
