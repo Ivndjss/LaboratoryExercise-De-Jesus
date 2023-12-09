@@ -95,6 +95,13 @@ method to serve as **interface**: follow the program structure set below
    #set vote
    candi1.setVotes(voteCast)
 
+
+
+
+#Documentation for the Laboratory Exercise
+
+
+
 #get vote
 candi1.getVotes()
 d = dict(Counter(Candidate.votes))
