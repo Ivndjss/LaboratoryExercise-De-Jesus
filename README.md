@@ -203,3 +203,46 @@ This script creates two `datetime.time` objects, `t1` and `t2`, with the specifi
      print('Time difference:', (d2-d1).seconds//3600, ':', ((d2-d1).seconds//60)%60, ':', (d2-d1).seconds%60)
 
 This script creates two `datetime.datetime` objects, `d1` and `d2`, with the current date and specified times (8:00:00 and 12:00:00, respectively). It then prints the time components of `d1` and `d2`. Finally, it calculates and prints the time difference between `d2` and `d1` in hours, minutes, and seconds. The `datetime.datetime.combine()` function returns a datetime object with the specified date and time. The `datetime.date.today()` function returns the current local date. The `datetime.time()` function returns a time object with the specified hours, minutes, and seconds. The difference between two datetime objects returns a `datetime.timedelta` object, which represents a duration. The `seconds` attribute of a timedelta object returns the number of seconds in the duration. The script uses integer division (`//`) and modulus (`%`) to convert the number of seconds to hours, minutes, and seconds.
+
+
+### Voting.py
+
+#### Import the Counter class from the collections module
+     from collections import Counter
+
+#### Define a class named Candidate
+     class Candidate(object):
+#### Initialize an empty list named votes
+#### This list will hold the votes for each Candidate object
+         votes = []
+
+#### The __init__ method is the constructor for the class
+#### It initializes a new Candidate object with a name and a position
+     def __init__(self, name, position):
+          self.name = name
+          self.position = position
+
+#### the setVotes method adds a vote to the votes list
+    def setVotes(self, vote):
+        self.votes.append(vote)
+
+#### The getVotes method returns a dictionary with the count of each vote
+#### It uses the Counter class to count the votes and then converts the Counter object to a dictionary
+    def getVotes(self):
+        return dict(Counter(self.votes))
+
+#### Create a Candidate object named candi1 with the name 'John Doe' and the position 'President'
+     candi1 = Candidate('John Doe', 'President')
+
+#### Use a for loop to get 10 votes from the user
+#### The user is asked to enter a code to cast their vote
+#### The code is converted to an integer and then added to the votes list of the candi1 object
+     for x in range(10):
+         voteCast = int(input('Enter code to cast your vote'))
+         candi1.setVotes(voteCast)
+
+#### Print the count of each vote for the candi1 object
+     print(candi1.getVotes())
+
+
+This script defines a `Candidate` class with methods for setting and getting votes. An instance of the `Candidate` class, `candi1`, is created with the name 'John Doe' and the position 'President'. The script then prompts the user to enter a vote code 10 times. Each vote code is added to the `votes` list of the `candi1` object. Finally, the script prints a dictionary with the count of each vote for `candi1`. The `Counter` class from the `collections` module is used to count the votes. The `Counter` object is then converted to a dictionary and returned by the `getVotes` method. Note that the `votes` list is a class variable and will be shared by all instances of the `Candidate` class. If you want each `Candidate` object to have its own `votes` list, you should move the `votes = []` line to the `__init__` method.
