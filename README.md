@@ -116,7 +116,7 @@ method to serve as **interface**: follow the program structure set below
 **4) Display the count of a specific word from myString.**
 
 
-#### myString.py
+### myString.py
      from collections import Counter
      
      myString = "To understand the need for creating a class let us consider an example: Let us say that you wanted to track the number of dogs which may have different attributes like breed, and age. If a list is used, the first element could be the dog’s breed while the second element could represent its age. Let's suppose there are 100 different dogs, then how would you know which element is supposed to be which? What if you wanted to add other properties to these dogs? This lacks organization and it’s the exact need for classes."
@@ -144,3 +144,36 @@ method to serve as **interface**: follow the program structure set below
      ('If', 1), ('list', 1), ('is', 2), ('used,', 1), ('first', 1), ('element', 3), ('could', 
      2), ('be', 2), ('dog’s', 1), ('breed', 1), ('while', 1), ('second', 1), ('represent', 1), ('its', 1), ("Let's", 1), ('suppose', 1), ('there', 1), ('are', 1), ('100', 1), ('dogs,', 1), ('then', 1), ('how', 1), ('would', 1), ('know', 1), ('supposed', 1), ('which?', 1), ('What', 1), ('if', 1), ('add', 1), ('other', 1), ('properties', 1), ('these', 1), ('dogs?', 1), ('This', 1), ('lacks', 1), ('organization', 1), ('it’s', 1), ('exact', 1), ('classes.', 1)])
      0
+
+
+###Datetime (5)
+
+#### Import the datetime module
+          import datetime
+
+#### Create two time objects, t1 and t2, using the time() function from the datetime module
+#### The time() function returns a time object with hour, minute, and second
+          t1 = datetime.time(4, 20, 1)
+          t2 = datetime.time(6, 20, 1)
+
+#### Print the time object t1
+          print(t1)
+
+#### Print the hour part of the time object t1
+          print('hour :', t1.hour)
+
+#### Print the minute part of the time object t1
+          print('minute:', t1.minute)
+
+#### Print the second part of the time object t1
+          print('second:', t1.second)
+
+#### Print the microsecond part of the time object t1
+          print('microsecond:', t1.microsecond)
+
+#### Print the tzinfo (time zone information) of the time object t1
+#### By default, this is None as no time zone is specified
+          print('tzinfo:', t1.tzinfo)
+
+
+This script creates two `datetime.time` objects, `t1` and `t2`, with the specified hours, minutes, and seconds. It then prints the `t1` object and its components (hour, minute, second, microsecond, and tzinfo). The `datetime.time` function returns a time object initialized with the given arguments. If tzinfo (time zone info) is not provided, it is set to `None`. The `print` statements display the time object and its components. Note that the `tzinfo` attribute is `None` because no time zone information was provided when creating `t1` and `t2`. If you want to work with time zones, you'll need to use `datetime`'s `timezone` or `tzinfo` objects.
