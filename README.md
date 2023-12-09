@@ -12,7 +12,7 @@ element could represent its age. Let's suppose there are 100 different dogs, the
 you know which element is supposed to be which? What if you wanted to add other 
 properties to these dogs? This lacks organization and it’s the exact need for classes. ””
 
-##What to do:
+## What to do:
 
 **a) import Counter from collections**
 **b) split the string by words**
@@ -146,7 +146,7 @@ method to serve as **interface**: follow the program structure set below
      0
 
 
-###Datetime (5)
+### Datetime (5)
 
 #### Import the datetime module
           import datetime
