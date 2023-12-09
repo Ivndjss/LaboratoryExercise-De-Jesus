@@ -122,19 +122,19 @@ method to serve as **interface**: follow the program structure set below
      myString = "To understand the need for creating a class let us consider an example: Let us say that you wanted to track the number of dogs which may have different attributes like breed, and age. If a list is used, the first element could be the dog’s breed while the second element could represent its age. Let's suppose there are 100 different dogs, then how would you know which element is supposed to be which? What if you wanted to add other properties to these dogs? This lacks organization and it’s the exact need for classes."
 
      words = myString.split()
-     word_counts = Counter(words)
+     ivndjss = Counter(words)
 
 #### Display the number of the word occurrences and the first 5 most common words mentioned in myString.
-     print(word_counts.most_common(5))
+     print(ivndjss.most_common(5))
 
 #### Display the total number of words in myString
      print(len(words))
 
 #### Display all the items sets (keywords and values) of all words in myString
-     print(word_counts.items())
+     print(ivndjss.items())
 
 #### Display the count of a specific word from myString
-     print(word_counts['word'])
+     print(ivndjss['word'])
 
 #### The Result
     myString.py
@@ -146,7 +146,7 @@ method to serve as **interface**: follow the program structure set below
      0
 
 
-### Datetime (5)
+### Datetime_1.py (5)
 
 #### Import the datetime module
           import datetime
@@ -177,3 +177,29 @@ method to serve as **interface**: follow the program structure set below
 
 
 This script creates two `datetime.time` objects, `t1` and `t2`, with the specified hours, minutes, and seconds. It then prints the `t1` object and its components (hour, minute, second, microsecond, and tzinfo). The `datetime.time` function returns a time object initialized with the given arguments. If tzinfo (time zone info) is not provided, it is set to `None`. The `print` statements display the time object and its components. Note that the `tzinfo` attribute is `None` because no time zone information was provided when creating `t1` and `t2`. If you want to work with time zones, you'll need to use `datetime`'s `timezone` or `tzinfo` objects.
+
+
+### Datetime_2.py (6)
+#### Import the datetime module
+     import datetime
+
+#### Create two datetime objects, d1 and d2, using the combine() function from the datetime module
+#### The combine() function returns a datetime object with the specified date and time
+#### datetime.date.today() returns the current local date
+#### datetime.time(8,0,0) and datetime.time(12,0,0) return time objects with the specified hours, minutes, and seconds
+     d1 = datetime.datetime.combine(datetime.date.today(), datetime.time(8,0,0))
+     d2 = datetime.datetime.combine(datetime.date.today(), datetime.time(12,0,0))
+
+#### Print the time part of the datetime object d1
+     print('Start time......', d1.time())
+
+#### Print the time part of the datetime object d2
+     print('End time .......',d2.time())
+
+#### Calculate the time difference between d2 and d1 in hours, minutes, and seconds
+#### The difference (d2-d1) returns a timedelta object
+#### The seconds attribute of a timedelta object returns the number of seconds
+#### Use integer division (//) and modulus (%) to convert seconds to hours, minutes, and seconds
+     print('Time difference:', (d2-d1).seconds//3600, ':', ((d2-d1).seconds//60)%60, ':', (d2-d1).seconds%60)
+
+This script creates two `datetime.datetime` objects, `d1` and `d2`, with the current date and specified times (8:00:00 and 12:00:00, respectively). It then prints the time components of `d1` and `d2`. Finally, it calculates and prints the time difference between `d2` and `d1` in hours, minutes, and seconds. The `datetime.datetime.combine()` function returns a datetime object with the specified date and time. The `datetime.date.today()` function returns the current local date. The `datetime.time()` function returns a time object with the specified hours, minutes, and seconds. The difference between two datetime objects returns a `datetime.timedelta` object, which represents a duration. The `seconds` attribute of a timedelta object returns the number of seconds in the duration. The script uses integer division (`//`) and modulus (`%`) to convert the number of seconds to hours, minutes, and seconds.
