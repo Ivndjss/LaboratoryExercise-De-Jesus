@@ -24,8 +24,8 @@ properties to these dogs? This lacks organization and it’s the exact need for 
 
 *string = "How many times does each word show up in in this sentence of word string”*
 
-*Counter({'How':1,'many':1,"times':2,'does':1, 'each':4, 'word':2, 'show':1, 'up':1, 'in':2, 'this':1, 
-'sentence’:1, 'of':1, ‘string':1}]*
+*Counter({'How':1,'many':1,'times':1,'does':1, 'each':1, 'word':2, 'show':1, 'up':1, 'in':2, 'this':1, 
+'sentence':1, 'of':1, 'string':1}]*
 
 1) Display the number of the word occurrences and the first 5 tapmost common words mentioned
 in myString.
