@@ -15,7 +15,9 @@ properties to these dogs? This lacks organization and it’s the exact need for 
 ## What to do:
 
 **a) import Counter from collections**
+
 **b) split the string by words**
+
 **c) get and display the counts for each words**
 
 **e.g.**
